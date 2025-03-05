@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Ristian Uddin | Portfolio
+  </title>
+
+  <meta name="description" content="Machine Learning Specialist">
+  <meta name="keywords" content="Machine Learning, AI, APIs, Web Development" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#jobs" class="nav__link">Jobs</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Ristian Uddin</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Machine Learning enthusiast who specializes in AI/ML algorithms. With a strong background in database management and innovative research, I’m also well-versed in handling APIs, seamlessly integrating them to build efficient and scalable solutions.</p>
+        <a href="#contact" class="btn btn--pink">Get my Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <section class="jobs" id="jobs">
+      <div class="row">
+        <h2>My Job Experiences</h2>
+        <div class="job-entry">
+          <img src="./images/Job02.png" alt="Company Logo" class="job-logo">
+          <h3>Versatile Coaching Center</h3>
+          <p>Teaching Assistant - While still being a student here myself, I was responsible for checking exam papers and invigilating exam rooms, as a teaching assistant, to ensure a fair and orderly testing environment and also managed the class schedule for my teacher. (July 2017 - June 2018)</p>
+        </div>
+        <div class="job-entry">
+          <img src="./images/Job01.png" alt="Company Logo" class="job-logo">
+          <h3>CareTutors</h3>
+          <p>Verified Tutor - I worked here for 2 years and provided personalized teaching tailored to each student's academic needs and intellectual abilities, ensuring effective learning experiences. (March 2023 - Feb 2025)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="row">
+        <h2>Projects I Have Worked On</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Respire Check</h3>
+              <p>
+                An AI-powered web application that utilizes CLIP-KDViT and Grad-CAM to provide explainable chest X-ray diagnosis for COVID-19, pneumonia, and tuberculosis with high accuracy.
+              </p>
+              <ul class="work__list">
+                <li>Python, FastAPI</li>
+                <li>HTML, CSS</li>
+                <li>Deep Learning Methods</li>
+                <li>Image Processing</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/RespireCheck-Classification-of-X-Ray-Using-Knowledge-Distillation-and-Semi-Supervised-Segmentation" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/predict.html.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TownTrek</h3>
+              <p>
+                A Java-based Android app that serves as a local tourist guide, integrating Firebase authentication, Google Maps APIs, and OpenWeatherMap for real-time navigation and weather updates.
+              </p>
+              <ul class="work__list">
+                <li>JavaScript</li>
+                <li>HTML, CSS, XML</li>
+                <li>CSV Data Handling</li>
+                <li>API Integration (Google Maps, OpenWeatherMap)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/TownTrek--Local-Tourist-Guide-Android-App" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project2.png" class="work__image" alt="Project 2" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>CAPTCHA Recognition from Audio</h3>
+              <p>
+                Developed an ASR-based model using Whisper AI and EasyOCR to decode audio CAPTCHAs, improving accuracy with noise reduction and transcription refinement.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Fine-tuning ASR Model(WhisperAI, Wav2Vec2)</li>
+                <li>Audio processing, OCR</li>
+                <li>PyTorch, Tensorflow</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/CAPTCHA-Recognition-From-Audio-Using-WhisperAI-And-OCR">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Autonomous Overtaking Decision Modeling</h3>
+              <p>
+                I designed a vision-based system for autonomous overtaking using lane detection (Hough Transform) and a pre-trained YOLOv3 to identify and remove out-of-lane objects, ensuring safe decision-making via a probability-based model.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Computer Vision, Edge Detection</li>
+                <li>Mathematics & Geometry</li>
+                <li>OpenCV, NumPy, Tensorflow</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/Distance-Based-Probability-Modeling-for-Autonomous-Overtaking-Decisions-Using-Object-Detection">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project4.png" class="work__image" alt="Project 4" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>OVS (Online Voting System)</h3>
+              <p>
+                This was one of my first-year projects. An Android-based online voting system app that ensures secure, flexible, and error-free voting by preventing duplicate and proxy votes.
+              </p>
+              <ul class="work__list">
+                <li>Android Studio</li>
+                <li>Java, XML</li>
+                <li>Firebase, SQLite</li>
+                <li>API Integration</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/OVS--Online-Voting-System-Android-App">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project5.png" class="work__image" alt="Project 5" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Plant Disease Detection</h3>
+              <p>
+                A smartphone-based deep learning model for crop disease identification using a CNN trained on 55,562 leaf images, later optimized with knowledge distillation to balance accuracy and efficiency.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>CNN, Knowledge Distillation</li>
+                <li>Image Preprocessing, Feature Extraction</li>
+                <li>PyTorch, Tensorflow, OpenCV</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/Image-Based-Plant-Disease-Classification-Based-On-Deep-Learning-Techniques">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project6.png" class="work__image" alt="Project 6" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Temperature & Humidity Tracker</h3>
+              <p>
+                My only hardware project involves developing a temperature and humidity detection system using the STM32F103C8T6 (Blue Pill) microcontroller, an I2C OLED display, a DHT11 sensor, and a buzzer with a red LED for alerts.
+              </p>
+              <ul class="work__list">
+                <li>Embedded Systems Programming</li>
+                <li>C, Assembly Language</li>
+                <li>Circuit Design & Prototyping</li>
+                <li>STM32 Development with STM32CubeIDE, I2C and Sensor Interfacing</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/Temperature-And-Humidity-Detection-Using-STM32-Microcontroller-Embedded-System">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project7.png" class="work__image" alt="Project 7" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Immune System Analysis & Modeling</h3>
+              <p>
+                Leveraging ML to analyze immune markers like CD4 and CD8, this project enhances HIV detection using XGBoost, Random Forest, and Gradient Boosting while ensuring interpretability with SHAP values.
+              </p>
+              <ul class="work__list">
+                <li>Python (NumPy, Pandas, Scikit-learn, LightGBM, XGBoost)</li>
+                <li>Data Visualization & Preprocessing</li>
+                <li>Feature Engineering, Cross-validation techniques</li>
+                <li>ML Algorithms (Decision Tree, Random Forest)</li>
+                <li>Explainable AI (SHAP)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/MACHINE-LEARNING-APPROACHES-FOR-IMMUNE-SYSTEM-ANALYSIS-AND-MODELING">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project8.png" class="work__image" alt="Project 8" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>FoodPicky</h3>
+              <p>
+                FoodPicky is my web-based online food delivery system that connects users with local restaurants, enabling seamless ordering, secure payments, and real-time order tracking.
+              </p>
+              <ul class="work__list">
+                <li>Frontend Development (HTML5, CSS3, Bootstrap, JavaScript, jQuery)</li>
+                <li>Backend Development (PHP, SQL, MySQL)</li>
+                <li>Database Management (phpMyAdmin)</li>
+                <li>API Integration (AJAX for asynchronous operations)</li>
+                <li>Web Hosting & Deployment (XAMPP)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/RistianRidoy/FoodPicky--Online-Food-Delivery-Web-Based-System">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project9.png" class="work__image" alt="Project 9" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+      <div class="row">
+        <h2>Achievements</h2>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="slide"><img src="./images/certificate1.png" alt="Best Membership Certificate from NSU ACM Student Chapter Club" onclick="openLightbox(this)"></div>
+            <div class="slide"><img src="./images/certificate2.png" alt="CareTutors Tutoring Certificate" onclick="openLightbox(this)"></div>
+            <div class="slide"><img src="./images/certificate3.png" alt="Chemistry Olympiad 2017 from Bangladesh Chemical Society" onclick="openLightbox(this)"></div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <h3 id="certificate-title">Best Membership Certificate from NSU ACM Student Chapter Club</h3>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+    </div>
+
+    <section class="about" id="about">
+      <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+              <div class="about__text">
+                  <p>
+                      Hi, I'm Ristian Uddin. I live in Dhaka, Bangladesh, and my academic journey started at Willes Little Flower School & College, where I completed my O-Levels and A-Levels back in 2019. Later, I completed my Bachelor's in Computer Science and Engineering at North South University in Dec 2024. When I’m not working on code, you’ll probably find me watching a Barça game—I rarely miss one!
+                  </p>
+                  <p>
+                      If you ask me what I’m most passionate about academically, the answer is simple: Machine Learning. There’s something fascinating about training models to handle tasks we do every day, automating processes, and making life a little easier. I love the idea of feeding raw data to an intelligent system and watching it learn, adapt, and even outperform human efforts in certain tasks.
+                  </p>
+                  <p>
+                      Whether it’s optimizing AI-powered healthcare solutions, building autonomous decision-making models, or working on ASR-based CAPTCHA recognition, I enjoy solving complex problems through AI. For me, it's all about making technology more intuitive, efficient, and accessible.
+                  </p>
+                  <h3>Technical Skills</h3>
+                  <ul>
+                      <li>Programming: Python, C, C++, Java</li>
+                      <li>AI/ML Frameworks: TensorFlow, PyTorch, Keras, OpenCV, NumPy, Matplotlib</li>
+                      <li>Machine Learning & Deep Learning Algorithms</li>
+                      <li>Data Analysis & Feature Engineering</li>
+                      <li>Image & Audio Processing</li>
+                      <li>Web & Android App Development (HTML, CSS, XML, FastAPI)</li>
+                      <li>Database Management: SQL, Firebase</li>
+                      <li>Version Control: Git</li>
+                      <li>Soft Skills: Teamwork, Leadership, Research Skills, Teaching</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Since, I recently graduated, specializing in Machine Learning and AI, I'm actively looking for an in-field internship in IT-related roles or a junior Python/ML engineer position to sharpen my skills in real-world applications.  
+          <br><br>
+          If you think I’d be a good fit for an opportunity, or if you just want to connect, feel free to reach out via email. I’d love to chat!
+        </p>
+        <a href="mailto:ristianridoy1990@gmail.com" class="btn">ristianridoy1990@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <p>You can also reach me out here:</p>
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://x.com/RidoyRistian" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/RistianRidoy" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/ristian.ridoy8" title="Link to Facebook Profile">
+            <img src="./images/facebook.svg" class="footer__social-image" alt="Facebook">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/ristian-uddin-ridoy-644167284/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      <p>
+        &copy; Designed & Developed by <a href="https://www.linkedin.com/in/ristian-uddin-ridoy-644167284/" class="link">Ristian</a>.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
