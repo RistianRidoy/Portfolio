@@ -5,6 +5,10 @@
  const slides = document.querySelectorAll(".slide");
  const titleElement = document.getElementById("certificate-title");
  const titles = [
+   "Machine Learning Using Python from PythonCoding",
+   "Generative AI from Great Learning",
+   "NLP AND Text Mining for Beginners from Simplilearn",
+   "Introduction to Data Science from Simplilearn",
    "Best Membership Certificate from NSU ACM Student Chapter Club",
    "CareTutors Tutoring Certificate",
    "Chemistry Olympiad 2017 from Bangladesh Chemical Society"
@@ -78,5 +82,4 @@ function openLightbox(imgElement) {
 // Close Lightbox when clicking outside the image
 function closeLightbox() {
   document.getElementById("lightbox").classList.remove("show");
-}
-
+} 
