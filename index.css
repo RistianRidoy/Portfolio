@@ -561,6 +561,50 @@ body:not(.user-is-tabbing) a:focus {
     z-index: -1;
 }
 
+/* For mobile (Android) view */
+@media (max-width: 450px) {
+    .header__text-box {
+        position: relative; /* Create a stacking context */
+        z-index: 1; /* Ensures the text box stays above the image */
+        margin-top: 455px;
+    }
+
+    .header__text {
+        text-align: center; /* Align text to center */
+    }
+
+    .header__text .heading-primary {
+        margin-top: 30px; /* Adjust if needed to give space */
+    }
+
+    /* Circle frame for the image */
+    .header__image {
+        position: absolute;
+        top: 7%; /* Adjust to your liking */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px; /* Size of the circle */
+        height: 150px;
+        border-radius: 50%; /* Circle shape */
+        border: 5px solid #fff; /* Border around the circle */
+        background: url('./images/myself2.jpg') center/cover no-repeat;
+        background-size: cover; /* Ensures image covers the circle */
+        z-index: 0; /* Keep the image behind the text */
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('./images/bg.png') center/cover no-repeat;
+        opacity: 0.3; /* Adjust this value to control the image opacity */
+        z-index: -1;
+    }
+}
+
 .header__text {
     position: absolute;
     top: 50%;
