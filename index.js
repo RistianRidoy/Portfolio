@@ -83,3 +83,22 @@ function openLightbox(imgElement) {
 function closeLightbox() {
   document.getElementById("lightbox").classList.remove("show");
 } 
+// Function to toggle the hamburger menu
+function toggleMenu() {
+  const hamburger = document.querySelector(".hamburger");
+  hamburger.classList.toggle("open");
+  let navMenu = document.getElementById("navMenu");
+  navMenu.classList.toggle("show");
+}
+
+// Close the menu if clicked outside of the nav menu or hamburger icon
+document.addEventListener("click", function(event) {
+  const navMenu = document.getElementById("navMenu");
+  const hamburger = document.querySelector(".hamburger");
+
+  // Check if the click happened outside the nav menu and the hamburger icon
+  if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+    navMenu.classList.remove("show");
+    hamburger.classList.remove("open");
+  }
+});

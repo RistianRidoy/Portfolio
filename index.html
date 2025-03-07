@@ -19,7 +19,12 @@
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
-        <ul class="nav__items">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav__items" id="navMenu">
           <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
           <li class="nav__item"><a href="#jobs" class="nav__link">Jobs</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
@@ -31,10 +36,8 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Hi, I am Ristian Uddin</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
         <p>A Machine Learning enthusiast who specializes in AI/ML algorithms. With a strong background in data science management and innovative research, I’m also well-versed in handling APIs, seamlessly integrating them to build efficient and scalable solutions.</p>
         <a href="RistianUddin_CV.pdf" class="btn btn--pink">Get my CV</a>
       </div>
@@ -486,7 +489,7 @@
         </li>
       </ul>
       <p>
-        &copy; Designed & Developed by <a href="https://www.linkedin.com/in/ristian-uddin-ridoy-644167284/" class="link">Ristian</a>.
+        &copy; 2025 Designed & Developed by <a href="https://www.linkedin.com/in/ristian-uddin-ridoy-644167284/" class="link">Ristian</a>.
       </p>
     </div>
   </footer>
