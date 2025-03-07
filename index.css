@@ -147,7 +147,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #393939; /* Dark background like skills boxes */
+    background-color: #191919; /* Dark background like skills boxes */
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -848,7 +848,7 @@ h3#certificate-title {
     font-weight: bold;
     margin-bottom: 10px;
     color: white; /* White color for the sub-heading */
-    background-color: #333; /* Dark background for better contrast */
+    background-color: #191919; /* Dark background for better contrast */
     padding: 5px;
     border-radius: 5px;
     font-family: 'HKGrotesk', sans-serif; /* Apply custom font to the sub-heading */
@@ -856,7 +856,7 @@ h3#certificate-title {
 
 /* Skills Box Styling */
 .skills-box {
-    background-color: #393939; /* Dark color for the box */
+    background-color: #191919; /* Dark color for the box */
     border-radius: 8px;
     padding: 15px;
     height: 250px; /* Fixed height for consistent sizing */
@@ -913,4 +913,26 @@ h3#certificate-title {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Adds a glowing effect */
     transform: translateY(-5px) scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust text size for readability */
+    }
+    .container {
+        width: 100%; /* Make the container full width */
+        padding: 10px; /* Ensure spacing */
+    }
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+    .portfolio-item {
+        width: 100%; /* Ensure portfolio items take full width */
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Improve spacing for touch targets */
+    }
 }
